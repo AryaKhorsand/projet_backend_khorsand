@@ -18,9 +18,6 @@ evenements_df = pd.read_csv(data / "evenements_associations.csv")
 
 ## Vous devez ajouter les routes ici :
 
-app = Flask(__name__)
-CORS(app)
-
 data = pl.Path(__file__).parent.absolute() / "data"
 
 # Charger les données CSV
