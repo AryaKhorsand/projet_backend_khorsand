@@ -18,16 +18,6 @@ evenements_df = pd.read_csv(data / "evenements_associations.csv")
 
 ## Vous devez ajouter les routes ici :
 
-data = pl.Path(__file__).parent.absolute() / "data"
-
-# Charger les données CSV
-associations_df = pd.read_csv(data / "associations_etudiantes.csv")
-evenements_df = pd.read_csv(data / "evenements_associations.csv")
-
-
-## Vous devez ajouter les routes ici :
-
-
 # Vérifier si le serveur est actif
 @app.route("/api/alive", methods=["GET"])
 def alive():
